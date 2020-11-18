@@ -1,0 +1,421 @@
+/** Header **/
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+header{
+    background-image: url("../images/header.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.header-overlay h3 {
+    padding-top: 20%;
+    padding-bottom: 5%;
+    font-size: 35px;
+    color: white;
+}
+.hotel-button, .hotel-button:focus, .hotel-button:active, .hotel-button:visited{
+    background: transparent;
+    border-color: #5ea8d6;
+    border: 1px solid;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 2%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.hotel-button:hover{
+    background-color: #fff;
+    color: #5ea8d6;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 992.98px) {
+    .header-overlay {
+        margin-top:13%;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-brand:after{
+        content: "Hotel California";
+        color: black;
+    }
+    .gen-p {
+        margin: 8%!important;
+    }
+}
+@media (max-width: 540px) {
+  .icons{
+      width: 20px;
+      height: 20px;
+  }
+}
+
+/** NAVBAR **/
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: darkred;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+    .pb-3, .py-3 {
+         padding-bottom: 0!important; 
+    }
+
+}
+
+/** Otelimiz Hakkında **/
+
+#otel{
+    background-color: rgb(198, 233, 255);
+    height: auto;
+    position: relative;
+    bottom: 0;
+  }
+
+.general h2{
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.general h2:after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left:50%;
+    width:60px;
+    height: 2px;
+    background-color: #333;
+    margin-left: -30px;
+}
+.general p {
+   margin: 8%;
+}
+.otel-img{
+    right: 0;
+    bottom: 0;
+    float: right;
+    position: relative;
+ 
+}
+#aktiviteler{
+    background-color: #c189b9;
+    height: auto;
+    top:0;
+    position: relative;
+  }
+
+.card-img-top{
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: white;
+}
+.card{
+    background-color: transparent;
+    border: none;
+}
+.card-text{
+    text-align: center;
+    font-size: 14px;
+}
+.aktiviteler{
+    width: 80%;
+}
+.aktivite{
+    background-color:#eb9dc5;
+    border: 10px solid;
+    border-color: #d693bf;
+    margin-top: 5%;
+}
+.aktivite h6{
+    font-weight: bolder;
+}
+.aktivite p {
+    margin: 1%;
+}
+.aktivite-progressbar{
+    background-color: #f5f5f5;
+    height: auto;
+    position: relative;
+}
+.act-progress{
+    width: 80%;
+    margin-bottom: 5%;
+}
+.progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+  }
+  
+  .progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .progress .progress-left {
+    left: 0;
+  }
+  
+  .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+  }
+  
+  .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+  }
+  
+  .progress .progress-right {
+    right: 0;
+  }
+  
+  .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+  }
+  
+  .progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.red .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+
+#yorumlar{
+    background-color: #ffedcb;
+    height: auto;
+    top:0;
+    position: relative;
+  }
+
+  .avatar{
+      border-radius: 50%;
+      vertical-align: middle;
+      border: 5px solid;
+      border-color: white;
+      float: left;
+  }
+  
+  .yorum::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .yorum {
+      margin-bottom: 5%;
+  }
+.yorum span {
+    font-weight: bolder;
+    margin-right: 10%;
+    float: right;
+}
+  
+  @media (max-width: 500px) {
+    .yorum {
+        text-align: center;
+    }
+    .yorum img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
+
+  #iletisim{
+    background-color: #0099ff;
+    height: auto;
+    top:0;
+    position: relative;
+
+  }
+
+  #harita{
+      height: 100vh;
+      top:0;
+      position: relative;
+  }
+
+  #social-icons{
+    background-color: #c2c2c2;
+    height: auto;
+    top:0;
+    position: relative;
+  }
+  #social-icons h6 {
+    text-align: center;
+  }
+  #social-icons img{
+      border-radius: 50%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+  }
+
+  .soc-icons{
+    list-style: none;
+    left: 0;
+    display: block;
+}
+
+.soc-icons li{
+    display: inline;
+    padding: 2%;
+    margin: 5%;
+    position: relative;
+}
